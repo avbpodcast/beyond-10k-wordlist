@@ -1,0 +1,6 @@
+# Keep LF line endings on every platform so the SHA-256 checksums always match.
+* text=auto eol=lf
+*.txt text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.py text eol=lf
