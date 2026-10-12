@@ -104,7 +104,7 @@ function passphrase(words, count = 6) {
 
 The list started in the **Amulet Word Picker** and is the "lock word" or passphrase list in these offline tools:
 
-- **Beyond Entropy** (v1.03 and later): random passphrase words for `.age` encryption, picked by rejection sampling.
+- **Beyond Entropy** (v1.03 and later): generates random passphrases from this list using its hardware-entropy stream, with each word picked uniformly by rejection sampling (no modulo bias).
 - **Project Age Good** (Python CLI and offline HTML): suggests random words (6 by default in the CLI) for age passphrase encryption.
 - **Beyond Wallet: The Hand and The Stick**: the four "lock words" on paper B that protect the `.age` copy of the seed backup. The seed itself stays BIP39.
 
